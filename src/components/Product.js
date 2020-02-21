@@ -8,6 +8,7 @@ const Product = props => {
 			<h1 className="title">{props.product.title}</h1>
 
 			<p className="price">${props.product.price}</p>
+			{console.log('product', props.product)}
 
 			<button onClick={() => props.addItem(props.product)}>
 				Add to cart
